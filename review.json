@@ -1,0 +1,16 @@
+{
+  "znamka": 6,
+  "slabiny": [
+    "Sekce Požičovňa a Cenník servisu na PC (buňky 2–4): ceník je úzký sloupec vlevo a vpravo zůstává polovina prázdné modrošedé plochy, bez jediné fotky. Do Požičovne dát vpravo velkou fotku Treku Remedy/Slash v Bikeparku Kálnica (z klientových fotek nebo YouTube kanálu). Ceník servisu dát vedle fotky dílny, aby web nebyl jen sled tabulek.",
+    "Sekce Naše značky (PC buňky 1–2, mobil 1–2): značky jsou dvakrát za sebou, nejdřív jako dlouhý řádek verzálek oddělených tečkami, hned pak jako mřížka šedých log. Textový výčet smazat a nechat jen mřížku log. Loga zvětšit, mřížku na mobilu dát do 3 sloupců místo 5 drobných a u každé značky přidat odkaz do eshopu.",
+    "Na mobilu v Cenníku servisu (buňka 4) se cena ‚100 €‘ u řádku ‚Servis vidlice a tlmiča FOX / RockShox‘ láme na dva řádky (‚100‘ / ‚€‘). Mezi číslo a € dát nbsp a ceně white-space: nowrap. Na PC v hero zvětšit podnadpis a zesílit tmavý přechod pod textem, protože malý bílý text na rušné fotce kmene je špatně čitelný."
+  ],
+  "zavazne": [],
+  "silne": [
+    "Logo klienta je vlevo v hlavičce, barvy (grafit + světle modrá) odpovídají brandu a v hlavičce je viditelné tlačítko Eshop.",
+    "Obsah je věcný a z podkladů: skutečné ceny půjčovny a servisu, certifikát Bosch, Viktorovo bio. Žádná vymyšlená čísla ani recenze.",
+    "Hero fotka celoodpruženého MTB s Fox/Maxxis sedí k oboru a nadpis hned říká, co firma dělá."
+  ],
+  "verdikt": "Korektní a pravdivý, ale je to generická šablona: hero a pak sled ceníků v tabulkách, bez nápadu z MTB světa a s prázdnými plochami. Atmosféru Bikeparku Kálnica nepřenáší, takže před odesláním opravit (fotky v sekcích, duplicitní značky, zalomená cena na mobilu).",
+  "_hash": "016f4b30c025a9fb87976689a6e619fe8af3f4bc"
+}
