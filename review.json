@@ -1,16 +1,19 @@
 {
-  "znamka": 6,
+  "znamka": 5,
   "slabiny": [
-    "Sekce Požičovňa a Cenník servisu na PC (buňky 2–4): ceník je úzký sloupec vlevo a vpravo zůstává polovina prázdné modrošedé plochy, bez jediné fotky. Do Požičovne dát vpravo velkou fotku Treku Remedy/Slash v Bikeparku Kálnica (z klientových fotek nebo YouTube kanálu). Ceník servisu dát vedle fotky dílny, aby web nebyl jen sled tabulek.",
-    "Sekce Naše značky (PC buňky 1–2, mobil 1–2): značky jsou dvakrát za sebou, nejdřív jako dlouhý řádek verzálek oddělených tečkami, hned pak jako mřížka šedých log. Textový výčet smazat a nechat jen mřížku log. Loga zvětšit, mřížku na mobilu dát do 3 sloupců místo 5 drobných a u každé značky přidat odkaz do eshopu.",
-    "Na mobilu v Cenníku servisu (buňka 4) se cena ‚100 €‘ u řádku ‚Servis vidlice a tlmiča FOX / RockShox‘ láme na dva řádky (‚100‘ / ‚€‘). Mezi číslo a € dát nbsp a ceně white-space: nowrap. Na PC v hero zvětšit podnadpis a zesílit tmavý přechod pod textem, protože malý bílý text na rušné fotce kmene je špatně čitelný."
+    "Naše značky na mobilu (buňky 1–2) a na 820 px: mřížka log je jeden rastrový obrázek img.wide (img/znacky.jpg, 1024 px roztažený 1,76×). Je široký 924 px, a tak přetéká na 820, 390 i 360 px a ukazuje jen levé 2 z 5 sloupců. Industry Nine, Bosch, Nextie, e*thirteen, Reverse, Race Face, absoluteBLACK, Brakestuff a Title jsou uříznuté. U jednoho obrázku navíc nejde dát odkaz do eshopu ke každé značce. Opravit: rozdělit na samostatná loga (SVG/PNG) v CSS mřížce (5 sloupců na PC, 3 na mobilu), každé logo jako <a> na značku v eshopu, přidat max-width:100% a kontrolu scrollWidth na 360/390/820.",
+    "Požičovňa bicyklov (PC buňka 2, mobil buňka 3): vpravo je ta samá fotka kola na kmeni jako v hero, ne Trek Remedy/Slash v Bikeparku Kálnica, jak chtěla minulá výtka. Opravit: dát fotku půjčovních Treků v Kálnici (z klientových fotek nebo z YouTube kanálu). Stejně tak Kontakt a bio (PC buňka 4) opakuje fotku dílny z Cenníku servisu. Tam dát Viktorovu fotku na kole nebo záběr z bikeparku.",
+    "Hero na PC (buňka 1): podnadpis ‚Dealer a distribútor značiek…‘ je pořád drobný (asi 15 px) a slabý vedle obřího H1 na rušné kůře kmene. Zvětšit ho na 20–22 px s řádkováním 1,5, zúžit na asi 560 px a ztmavit levou spodní část přechodu (asi rgba(0,0,0,.65)). Na mobilu doplnit snímky po patičku, protože koláž končí u Ebike servisu a oprava ‚100 €‘ v Cenníku servisu se nedá ověřit."
   ],
-  "zavazne": [],
+  "zavazne": [
+    "Naše značky, mobil 360/390 px a tablet 820 px: horizontální přetečení (scrollWidth 924 px kvůli img.wide). Mřížka log je uříznutá a 3 z 5 sloupců značek nejsou vidět. Logo-obrázek je roztažený 1,76× (podle QA)."
+  ],
   "silne": [
-    "Logo klienta je vlevo v hlavičce, barvy (grafit + světle modrá) odpovídají brandu a v hlavičce je viditelné tlačítko Eshop.",
-    "Obsah je věcný a z podkladů: skutečné ceny půjčovny a servisu, certifikát Bosch, Viktorovo bio. Žádná vymyšlená čísla ani recenze.",
-    "Hero fotka celoodpruženého MTB s Fox/Maxxis sedí k oboru a nadpis hned říká, co firma dělá."
+    "Logo klienta vlevo v hlavičce, tmavě šedá hlavička se světle modrým tlačítkem Eshop drží brand, Oswald + Barlow jsou čisté a diakritika je v pořádku.",
+    "Textový výčet značek zmizel a na PC zůstala přehledná mřížka 5 sloupců log.",
+    "Ceníky už nejsou osamocené tabulky: Požičovňa i Cenník servisu mají fotku vpravo, Ebike servis stojí vedle skutečného certifikátu Bosch klienta. Ceny a fakta odpovídají briefu.",
+    "Kontakt a bio je konkrétní (Viktor, MTB od 1999, ambasádor Kálnice), s e-maily, IČO a adresou."
   ],
-  "verdikt": "Korektní a pravdivý, ale je to generická šablona: hero a pak sled ceníků v tabulkách, bez nápadu z MTB světa a s prázdnými plochami. Atmosféru Bikeparku Kálnica nepřenáší, takže před odesláním opravit (fotky v sekcích, duplicitní značky, zalomená cena na mobilu).",
-  "_hash": "016f4b30c025a9fb87976689a6e619fe8af3f4bc"
+  "verdikt": "Na PC jsou výtky ke značkám a ceníkům z velké části opravené, ale fotka v Požičovni je pořád stejná jako v hero, ne Trek v Kálnici. Nová mřížka log jako jeden obrázek na mobilu a na 820 px přetéká a uřezává většinu značek, a to je podle kritérií strop 5. Verdikt: opravit.",
+  "_hash": "d92b8b54d83ae273615ab64ce6a7cdad451b038b"
 }
