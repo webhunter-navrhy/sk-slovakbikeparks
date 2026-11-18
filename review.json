@@ -1,19 +1,16 @@
 {
-  "znamka": 5,
+  "znamka": 7,
   "slabiny": [
-    "Naše značky na mobilu (buňky 1–2) a na 820 px: mřížka log je jeden rastrový obrázek img.wide (img/znacky.jpg, 1024 px roztažený 1,76×). Je široký 924 px, a tak přetéká na 820, 390 i 360 px a ukazuje jen levé 2 z 5 sloupců. Industry Nine, Bosch, Nextie, e*thirteen, Reverse, Race Face, absoluteBLACK, Brakestuff a Title jsou uříznuté. U jednoho obrázku navíc nejde dát odkaz do eshopu ke každé značce. Opravit: rozdělit na samostatná loga (SVG/PNG) v CSS mřížce (5 sloupců na PC, 3 na mobilu), každé logo jako <a> na značku v eshopu, přidat max-width:100% a kontrolu scrollWidth na 360/390/820.",
-    "Požičovňa bicyklov (PC buňka 2, mobil buňka 3): vpravo je ta samá fotka kola na kmeni jako v hero, ne Trek Remedy/Slash v Bikeparku Kálnica, jak chtěla minulá výtka. Opravit: dát fotku půjčovních Treků v Kálnici (z klientových fotek nebo z YouTube kanálu). Stejně tak Kontakt a bio (PC buňka 4) opakuje fotku dílny z Cenníku servisu. Tam dát Viktorovu fotku na kole nebo záběr z bikeparku.",
-    "Hero na PC (buňka 1): podnadpis ‚Dealer a distribútor značiek…‘ je pořád drobný (asi 15 px) a slabý vedle obřího H1 na rušné kůře kmene. Zvětšit ho na 20–22 px s řádkováním 1,5, zúžit na asi 560 px a ztmavit levou spodní část přechodu (asi rgba(0,0,0,.65)). Na mobilu doplnit snímky po patičku, protože koláž končí u Ebike servisu a oprava ‚100 €‘ v Cenníku servisu se nedá ověřit."
+    "Požičovňa bicyklov a Cenník servisu (PC 1440, buňky 2 a 4): duplicitní fotka je pryč, ale nic ji nenahradilo. Tabulka cen zabírá jen levých asi 640 px a pravá polovina modrého pruhu je prázdná, takže sekce působí nedodělaně. Do Požičovne vpravo dát fotku půjčovních Trek Remedy/Slash v Bikeparku Kálnica (z klientových fotek nebo ze záběru z YouTube kanálu). Cenník servisu rozdělit do dvou sloupců (prehliadky / vidlice a tlmiče) přes celou šířku 1100 px.",
+    "Naše značky na mobilu 390/360 px (buňka 1): mřížka má pořád 5 sloupců, ne 3. Šedá loga jsou široká asi 45 px a Industry Nine, absoluteBLACK, SB One a 11designz se nedají přečíst. Na šířce do 600 px nastavit grid-template-columns: repeat(3,1fr) a logu dát min. šířku 80 px. Každé logo obalit do <a> na stránku značky v eshopu, aby mřížka vedla k nákupu.",
+    "Kontakt a bio (PC buňka 4, mobil buňka 4 dole): u textu o Viktorovi (MTB od 1999, YouTube od 2015, ambasádor Kálnice) je fotka prázdné dílny. Vyměnit ji za Viktorovu fotku na kole nebo za záběr z Bikeparku Kálnica. Pod e-maily přidat výrazné tlačítko ‚Napísať Viktorovi‘ (mailto) a odkaz na YouTube kanál, protože kontakt je teď jen dva podtržené odkazy."
   ],
-  "zavazne": [
-    "Naše značky, mobil 360/390 px a tablet 820 px: horizontální přetečení (scrollWidth 924 px kvůli img.wide). Mřížka log je uříznutá a 3 z 5 sloupců značek nejsou vidět. Logo-obrázek je roztažený 1,76× (podle QA)."
-  ],
+  "zavazne": [],
   "silne": [
-    "Logo klienta vlevo v hlavičce, tmavě šedá hlavička se světle modrým tlačítkem Eshop drží brand, Oswald + Barlow jsou čisté a diakritika je v pořádku.",
-    "Textový výčet značek zmizel a na PC zůstala přehledná mřížka 5 sloupců log.",
-    "Ceníky už nejsou osamocené tabulky: Požičovňa i Cenník servisu mají fotku vpravo, Ebike servis stojí vedle skutečného certifikátu Bosch klienta. Ceny a fakta odpovídají briefu.",
-    "Kontakt a bio je konkrétní (Viktor, MTB od 1999, ambasádor Kálnice), s e-maily, IČO a adresou."
+    "Přetečení je opravené: podle QA je scrollWidth na 360, 390, 820 i 1024 px roven šířce viewportu. Značky jsou teď samostatná loga v mřížce a vidět je všech 20 včetně Bosch, Nextie, Race Face a e*thirteen.",
+    "Hero na PC: podnadpis má teď asi 20 px, je zúžený na zhruba 520 px a na ztmaveném přechodu se dobře čte. H1 v Oswaldu má správné háčky a hierarchie funguje.",
+    "Obsah je čistě z podkladů klienta: skutečné ceny půjčovny, Ebike servisu a Cenníku servisu, Bosch certifikát firmy Consulting & Trading, IČO a adresa v Žilině. Logo klienta je vlevo v hlavičce a tlačítko Eshop je pořád viditelné."
   ],
-  "verdikt": "Na PC jsou výtky ke značkám a ceníkům z velké části opravené, ale fotka v Požičovni je pořád stejná jako v hero, ne Trek v Kálnici. Nová mřížka log jako jeden obrázek na mobilu a na 820 px přetéká a uřezává většinu značek, a to je podle kritérií strop 5. Verdikt: opravit.",
-  "_hash": "d92b8b54d83ae273615ab64ce6a7cdad451b038b"
+  "verdikt": "Závažné vady z minulého kola jsou pryč: web nepřetéká, značky jsou celé a hero se čte, proto známka jde nahoru na 7. K 8 chybí vyplnit prázdné pravé poloviny ceníků a dát fotky z Kálnice a Viktora místo prázdné dílny.",
+  "_hash": "e20891e973bf0fa003223af317104bfc452fedb8"
 }
